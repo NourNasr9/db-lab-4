@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Login</title>
+    <link rel="stylesheet" href="loginAndRegistrationStylesheet.css">
+    <script src="loginAndRegistrationScripts.js" defer></script>
+</head>
+<body>
+    <h2>Choose an Option</h2>
+    <div class="button-container">
+        <button id="showRegistration" class="showRegistration" onclick="showRegistration()">Registration</button>
+        <button id="showLogin" class="showLogin" onclick="showLogin()">Login</button>
+    </div>
+    <h1 id="welcomeMessageContainer" style="display: none;">
+        <div id="welcomeMessage" class="welcomeMessage">
+        </div>
+    </h1>
+    <div id="registrationFormContainer" style="display: none;">
+        <h2>Registration</h2>
+        <form id="registerationForm" action="registeration.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+            <p id="nameError" class="errorMessage"></p>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p id="emailError" class="errorMessage"></p>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <p id="passwordError" class="errorMessage"></p>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+            <p id="confirmPasswordError" class="errorMessage"></p>
+
+            <button type="button" onclick="registerUser()">Register</button>
+            <p id="registrationMessage"></p>
+        </form>
+    </div>
+
+    <div id="loginFormContainer" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm" action="login.php" method="post">
+            <label for="loginEmail">Email:</label>
+            <input type="email" id="loginEmail" name="email" required>
+            <p id="loginEmailError" class="errorMessage"></p>
+
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <p id="loginPasswordError" class="errorMessage"></p>
+
+            <button type="button" onclick="loginUser()">Login</button>
+            <p id="loginMessage"></p>
+        </form>
+    </div>
+</body>
+</html>

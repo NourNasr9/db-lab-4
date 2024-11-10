@@ -1,0 +1,75 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:url(bg4.jpg) ;
+    color: rgb(82, 64, 50);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+form {
+    border: .125rem solid rgb(122, 99, 82);
+    box-shadow: .3125rem .3125rem .3125rem .3125rem rgb(127, 108, 91);
+    border-radius: 1.25rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    width: 25rem;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    margin: .9375rem;
+}
+
+label, input {
+    width: 100%;
+    display: block;
+    margin: .3125rem 0;
+}
+
+button {
+    width: 100%;
+    padding: .625rem;
+    background-color: rgb(82, 64, 50);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5625rem;
+    margin: .4375rem;
+}
+
+button:hover {
+    background-color: rgb(122, 99, 82);
+}
+
+p {
+    color: red;
+    font-size: 0.9rem;
+}
+.errorMessage {
+    color: red
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5625rem;
+    width: 75%;
+}
+.button-container button {
+    margin: 0 .625rem;
+    padding: .625rem 1.25rem;
+    font-size: 1rem;
+}
